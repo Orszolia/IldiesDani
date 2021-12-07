@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Garamond";
+  src:local("Garamond"), url("Garamond.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "WhiteAngelica";
+  src:local("WhiteAngelica"), url("WhiteAngelica.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "AlexanderLettering";
+  src:local("AlexanderLettering"), url("AlexanderLettering.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Garamond";
+  src:local("Garamond"), url("Garamond.ttf") format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h4 {
+  font-family: "WhiteAngelica", cursive;
+  font-size: 60px !important;
+}
+
+h2 {
+  font-family: "Tangerine-Regular";
+}
+
+p {
+  font-family: "Garamond", sans-serif;
+  src:local("Garamond"), url("Garamond.ttf") format("woff");
+  line-height: 30px;
+  font-size: 27px;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+li {
+  font-family: "Garamond", sans-serif;
+  line-height: 30px;
+  font-size: 35px;
+  text-align: center;
+
+}
+
+a {
+  font-family: "Garamond", sans-serif;
+  font-size: 25px;
+}
+
+.landing_text {
+  width: 100%;
+  padding-top: 160px;
+  padding-left: 10%;
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.landing_img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -40px;
+width: 100%;
+}
+
+
+
+
+/* NAVBAR STYLES */
+
+.navbar.index {
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+
+.navbar.index.solid {
+  transition: 0.5s ease;
+  opacity: 0.9;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 30px;
+  padding: 10px 15px !important;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: ease-in 0.2s;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.icon {
+  color: white;
+  font-size: 35px;
+  transition: ease-in 0.2s;
+  margin: 7px 0px 0px 15px;
+}
+
+.icon:hover {
+  color: rgb(61, 81, 70);
+}
+
+/* BLOG STYLES */
+
+
+
+.frame {
+ position: absolute;
+}
+
+.img-fluid{
+  width: 500px;
+}
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 20rem;
+  overflow: hidden;
+  background: rgb(255,255,255);
+  
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.portfolio-modal-title {
+  font-size: 60px !important;
+}
+
+@media (min-width: 992px) {
+  .portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: #3d5146;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: grey;
+  opacity: 1;
+}
+
+.landing_img.mobil{
+  display: none;
+}
+
+.jonaregen.mobil {
+  display: none;
+}
+
+.program.mobil {
+  display: none;
+}
+
+.frame.mobil {
+  display: none;
+}
+
+.modal-padding{
+  padding:20px 200px 260px 200px
+}
+
+@media only screen and (max-width: 600px) {
+  .landing_img.big{
+    display: none;
+  }
+
+  h4 {
+    font-size: 35px !important;
+    padding-top: 100px;
+  }
+
+  .landing_img.mobil{
+    display: block;
+  }
+
+  li {
+    font-size: 30px !important;
+    line-height: 23px;
+  }
+
+  .modal-padding{
+    padding:20px 100px 260px 100px
+  }
+
+}
+
+@media only screen and (max-width: 1250px) {
+  .jonaregen.big {
+    display: none;
+  }
+
+  .modal-padding{
+    padding:20px 100px 260px 100px
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .program.big {
+    display: none;
+  }
+
+  .program.mobil {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+  .frame.big {
+    display: none;
+  }
+
+  .frame.mobil {
+    display: block;
+    width: 420px;
+  }
+
+  .modal-padding{
+    padding:20px 50px 260px 50px
+  }
+
+  .landing{
+    margin-top: -250px;
+  }
+
+  .tanacsadas{
+    margin-top: 200px;
+  }
+
+}
