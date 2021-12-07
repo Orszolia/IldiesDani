@@ -32,20 +32,7 @@
 
   <script>
     $(document).ready(function () {
-      var LoggedIn = false;
 
-      $.ajax({
-        url: "password.php",
-        type: "GET",
-
-        success: function (result) {
-          if (result == "true") {
-            LoggedIn = true;
-            console.log(LoggedIn);
-
-          }
-        },
-      });
 
       // Set the date we're counting down to
       var countDownDate = new Date("Febr 25, 2022 15:00:00").getTime();
@@ -79,7 +66,8 @@
   </script>
 
 
-  <title>Ildi és Dani esküvői weboldal</title>
+  <title>Ildi és Dani</title>
+  <link rel="icon" type="image/x-icon" href="img/heart.png" />
 
 </head>
 
@@ -173,7 +161,7 @@
 
   <!-- Helyszín oldal-->
 
-  <section id="helyszín" style="min-height: 100vh; overflow: hidden; position: relative;" class="tanacsadas">
+  <section id="helyszín" style=" overflow: hidden; position: relative;" class="tanacsadas">
 
     
 
@@ -187,6 +175,7 @@
 
 
             <div class="container" >
+              <h2 class="display-4" style="text-align: center; padding-bottom: 40px;">Helyszín és dátum</h2>
 
               <ul class="list-unstyled" style="font-family:AlexanderLettering;" >
                 <li>Sok szeretettel meghívunk Titeket,</li>
@@ -226,14 +215,14 @@
   <!-- Információk oldal-->
 
   <section id="információk"
-    style="min-height: 120vh; width: 100%; position: relative; overflow: hidden;"
+    style="min-height: 100vh; width: 100%; position: relative; overflow: hidden; padding-top: 100px;"
     class="portfolio informaciok">
 
     <div class="container blog_content">
 
       <div class="blog">
 
-        <h2 class="display-2" style="text-align: center;">Információk</h2>
+        <h2 class="display-4" style="text-align: center;">Információk</h2>
 
 
       </div>
@@ -293,7 +282,7 @@
   </section>
 
 
-  <section id="program" style="width:100%; min-height: 100vh; overflow: hidden; margin-top: -300px;" class="program">
+  <section id="program" style="width:100%; min-height: 100vh; overflow: hidden; padding-top: 70px;" class="program">
 
     <img src="img/Péntek.png" class="program big" style="width: 100%; padding: 0px 50px; z-index: 1;">
     <img src="img/Péntek_mobil.png" class="program mobil" style="z-index: 1;">
@@ -301,11 +290,11 @@
   </section>
 
 
-  <section id="visszajelzés" class="visszajelzes page-section bg-primary " style="padding-top: -200px;">
+  <section id="visszajelzés" class="visszajelzes page-section" style="padding-top: 100px;">
 
     <div class="container" style="position: relative;">
       <!-- Contact Section Heading-->
-      <h2 class="page-section-heading text-center font-weight-light " style="font-size: 100px;">
+      <h2 class="page-section-heading text-center font-weight-light " style="font-size: 60px;">
         Visszajelzés
       </h2>
 
@@ -399,24 +388,24 @@
                   </div>
 
                   <div class="form-check" style="margin-bottom:10px;">
-                    <input name="room" class="form-check-input" id="rozsa" type="radio" style="transform: scale(1.2);"
-                      value="Fenyőharaszt Kastélyszálló" />
-                    <label for="rozsa" class="form-check-label" style="font-size:18px;">Szállás és shuttle buszt is kérek
-                      Ft/fő</label>
+                    <input name="room" class="form-check-input" id="szallasesbusz" type="radio" style="transform: scale(1.2);"
+                      value="Szállást és shuttle buszt kér" />
+                    <label for="szallasesbusz" class="form-check-label" style="font-size:18px;">Szállás és shuttle buszt is kérek
+                    </label>
                   </div>
 
                   <div class="form-check" style="margin-bottom:10px;">
-                    <input name="room" class="form-check-input" id="rozsa" type="radio" style="transform: scale(1.2);"
-                      value="Fenyőharaszt Kastélyszálló" />
-                    <label for="rozsa" class="form-check-label" style="font-size:18px;">Csak szállást kérek
-                      Ft/fő</label>
+                    <input name="room" class="form-check-input" id="szallas" type="radio" style="transform: scale(1.2);"
+                      value="Csak szállást kér" />
+                    <label for="szallas" class="form-check-label" style="font-size:18px;">Csak szállást kérek
+                    </label>
                   </div>
 
                   <div class="form-check" style="margin-bottom:10px;">
-                    <input name="room" class="form-check-input" id="rozsa" type="radio" style="transform: scale(1.2);"
-                      value="Fenyőharaszt Kastélyszálló" />
-                    <label for="rozsa" class="form-check-label" style="font-size:18px;">Csak shuttle buszt kérek
-                      Ft/fő</label>
+                    <input name="room" class="form-check-input" id="busz" type="radio" style="transform: scale(1.2);"
+                      value="Csak shuttle buszt kér" />
+                    <label for="busz" class="form-check-label" style="font-size:18px;">Csak shuttle buszt kérek
+                    </label>
                   </div>
 
                 </div>
@@ -492,12 +481,12 @@
         <div class="modal-body">
           <div class="container" style="position: relative;">
 
-            <div class="row justify-content-center">
+            <div class="justify-content-center">
 
-              <div class="col-lg-8 m-5 modal-padding" >
+              <div class="m-5 modal-padding" >
 
                 <!-- Blog Modal - Title-->
-                <h2 class="portfolio-modal-title text-secondary mb-5 mt-0  text-center" id="portfolioModal1Label">
+                <h2 class="portfolio-modal-title text-secondary mt-0 mb-5 text-center" id="portfolioModal1Label">
                   Ajándék
                 </h2>
 
@@ -539,10 +528,10 @@
 
             <div class="row justify-content-center">
 
-              <div class="col-lg-8 m-5 modal-padding">
+              <div class="m-5 modal-padding">
 
                 <!-- Blog Modal - Title-->
-                <h2 class="portfolio-modal-title text-secondary mb-5 mt-0  text-center" id="portfolioModal1Label">
+                <h2 class="portfolio-modal-title text-secondary mt-0  text-center" id="portfolioModal1Label">
                   Szállás és személyszállítás:
                 </h2>
 
@@ -607,7 +596,7 @@
 
             <div class="row justify-content-center">
 
-              <div class="col-lg-8 m-5 modal-padding">
+              <div class="m-5 modal-padding">
 
                 <!-- Blog Modal - Title-->
                 <h2 class="portfolio-modal-title text-secondary mb-5 mt-0  text-center" id="portfolioModal1Label">
